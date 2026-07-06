@@ -149,7 +149,7 @@ export default function ProductCard({ product }: Props) {
             WebkitBoxOrient: 'vertical' as const,
             overflow: 'hidden',
             margin: 0,
-            fontFamily: 'Noto Sans Thai, Inter, sans-serif',
+            fontFamily: 'Kanit, sans-serif',
           }}>
             {displayName}
           </h3>

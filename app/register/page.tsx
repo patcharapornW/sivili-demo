@@ -77,7 +77,7 @@ export default function RegisterPage() {
                 <div style={{ width: '56px', height: '56px', borderRadius: '12px', background: '#1E3A5F', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1rem' }}>
                   <span style={{ color: '#D4A96A', fontWeight: 800, fontSize: '1.5rem', fontFamily: 'serif' }}>S</span>
                 </div>
-                <h1 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1E3A5F', marginBottom: '0.25rem', fontFamily: 'Noto Serif Thai, serif' }}>
+                <h1 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1E3A5F', marginBottom: '0.25rem', fontFamily: 'Kanit, sans-serif' }}>
                   {t('register_title')}
                 </h1>
                 <p style={{ color: '#9CA3AF', fontSize: '0.875rem' }}>สร้างบัญชีใหม่กับ Sivili</p>

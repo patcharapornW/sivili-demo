@@ -39,7 +39,7 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: 'rgba(255,255,255,0.1)' }}>
                 <span style={{ color: '#D4A96A', fontWeight: 800, fontSize: '1.2rem', fontFamily: 'serif' }}>S</span>
               </div>
-              <div style={{ fontFamily: 'Noto Serif Thai, serif', fontWeight: 700, fontSize: '1.3rem', color: 'white' }}>
+              <div style={{ fontFamily: 'Kanit, sans-serif', fontWeight: 700, fontSize: '1.3rem', color: 'white' }}>
                 Sivili
               </div>
             </div>

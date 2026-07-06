@@ -156,7 +156,7 @@ export default function ProductDetailPage({ params }: PageProps<'/products/[id]'
               </div>
 
               <h1 style={{
-                fontFamily: 'Noto Serif Thai, Playfair Display, serif',
+                fontFamily: 'Kanit, sans-serif',
                 fontSize: 'clamp(1.4rem, 3vw, 1.875rem)',
                 fontWeight: 700,
                 color: '#1E3A5F',

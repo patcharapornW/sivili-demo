@@ -5,7 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useAuth } from '../components/AuthProvider';
 import { useEffect } from 'react';
 import {
-  LayoutDashboard, Package, ShoppingBag, Users, LogOut, ArrowLeft, ExternalLink,
+  LayoutDashboard, Package, ShoppingBag, Users, LogOut, ArrowLeft, ExternalLink, Palette
 } from 'lucide-react';
 
 const NAV = [
@@ -13,6 +13,7 @@ const NAV = [
   { href: '/admin/products', label: 'จัดการสินค้า', icon: <Package size={18} /> },
   { href: '/admin/orders', label: 'จัดการคำสั่งซื้อ', icon: <ShoppingBag size={18} /> },
   { href: '/admin/users', label: 'จัดการผู้ใช้', icon: <Users size={18} /> },
+  { href: '/admin/theme', label: 'จัดการธีม', icon: <Palette size={18} /> },
 ];
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
@@ -40,7 +41,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <aside className="admin-sidebar hidden md:flex flex-col">
         {/* Brand */}
         <div style={{ padding: '1.5rem 1.5rem 1rem', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
-          <div style={{ fontFamily: 'Noto Serif Thai, serif', fontWeight: 700, fontSize: '1.2rem', color: 'white' }}>
+          <div style={{ fontFamily: 'Kanit, sans-serif', fontWeight: 700, fontSize: '1.2rem', color: 'white' }}>
             Sivili Admin
           </div>
           <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)', marginTop: '0.25rem' }}>

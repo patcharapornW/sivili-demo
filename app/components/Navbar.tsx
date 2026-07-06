@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { useRouter, usePathname } from 'next/navigation';
 
-export default function Navbar() {
+export default function Navbar({ isBuilder = false }: { isBuilder?: boolean }) {
   const { locale, setLocale, t } = useLanguage();
   const { totalItems } = useCart();
   const { user, logout, isAdmin } = useAuth();
@@ -44,7 +44,7 @@ export default function Navbar() {
     <>
       {/* Fixed Navbar */}
       <header
-        className={`fixed top-0 left-0 right-0 z-30 transition-all duration-300 ${
+        className={`${isBuilder ? 'sticky' : 'fixed'} top-0 left-0 right-0 z-30 transition-all duration-300 ${
           scrolled
             ? 'bg-white shadow-[0_2px_16px_rgba(30,58,95,0.1)]'
             : 'bg-white/95 backdrop-blur-md border-b border-[#EDE5D8]'
@@ -58,7 +58,7 @@ export default function Navbar() {
               <span style={{ color: '#D4A96A', fontWeight: 800, fontSize: '1.1rem', fontFamily: 'serif' }}>S</span>
             </div>
             <div className="hidden sm:block">
-              <div style={{ fontFamily: 'Noto Serif Thai, serif', fontWeight: 700, fontSize: '1.2rem', color: '#1E3A5F', lineHeight: 1 }}>
+              <div style={{ fontFamily: 'Kanit, sans-serif', fontWeight: 700, fontSize: '1.2rem', color: '#1E3A5F', lineHeight: 1 }}>
                 Sivili
               </div>
               <div style={{ fontSize: '0.6rem', color: '#7AABD9', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
@@ -209,7 +209,7 @@ export default function Navbar() {
       {/* Mobile Menu Drawer */}
       <div className={`mobile-menu md:hidden ${mobileOpen ? 'open' : ''}`}>
         <div className="flex items-center justify-between px-5 py-4 border-b border-[#EDE5D8]">
-          <div style={{ fontFamily: 'Noto Serif Thai, serif', fontWeight: 700, fontSize: '1.2rem', color: '#1E3A5F' }}>
+          <div style={{ fontFamily: 'Kanit, sans-serif', fontWeight: 700, fontSize: '1.2rem', color: '#1E3A5F' }}>
             Sivili Furniture
           </div>
           <button className="btn-ghost p-1" onClick={() => setMobileOpen(false)}>
